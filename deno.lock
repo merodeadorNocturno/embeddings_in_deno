@@ -1,0 +1,53 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@std/assert@1": "1.0.12",
+    "jsr:@std/dotenv@~0.225.3": "0.225.3",
+    "jsr:@std/internal@^1.0.6": "1.0.6",
+    "jsr:@surrealdb/surrealdb@^1.2.1": "1.2.1",
+    "npm:isows@^1.0.6": "1.0.6_ws@8.18.0",
+    "npm:uuidv7@^1.0.1": "1.0.2"
+  },
+  "jsr": {
+    "@std/assert@1.0.12": {
+      "integrity": "08009f0926dda9cbd8bef3a35d3b6a4b964b0ab5c3e140a4e0351fbf34af5b9a",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/dotenv@0.225.3": {
+      "integrity": "a95e5b812c27b0854c52acbae215856d9cce9d4bbf774d938c51d212711e8d4a"
+    },
+    "@std/internal@1.0.6": {
+      "integrity": "9533b128f230f73bd209408bb07a4b12f8d4255ab2a4d22a1fd6d87304aca9a4"
+    },
+    "@surrealdb/surrealdb@1.2.1": {
+      "integrity": "db785fe5a05db031c5ab61b206d32575d36319ee60c00902374353d7d12b4f5e",
+      "dependencies": [
+        "npm:isows",
+        "npm:uuidv7"
+      ]
+    }
+  },
+  "npm": {
+    "isows@1.0.6_ws@8.18.0": {
+      "integrity": "sha512-lPHCayd40oW98/I0uvgaHKWCSvkzY27LjWLbtzOm64yQ+G3Q5npjjbdppU65iZXkK1Zt+kH9pfegli0AYfwYYw==",
+      "dependencies": [
+        "ws"
+      ]
+    },
+    "uuidv7@1.0.2": {
+      "integrity": "sha512-8JQkH4ooXnm1JCIhqTMbtmdnYEn6oKukBxHn1Ic9878jMkL7daTI7anTExfY18VRCX7tcdn5quzvCb6EWrR8PA=="
+    },
+    "ws@8.18.0": {
+      "integrity": "sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/assert@1",
+      "jsr:@std/dotenv@~0.225.3",
+      "jsr:@surrealdb/surrealdb@^1.2.1"
+    ]
+  }
+}
