@@ -3,7 +3,7 @@ import { load } from "jsr:@std/dotenv"; // Use the latest compatible std version
 
 // Load environment variables from .env file
 // Returns an object with the environment variables. Fails silently if .env not found.
-const env = await load({ export: true }); // Use export: true to put them into Deno.env directly
+const _env = await load({ export: true }); // Use export: true to put them into Deno.env directly
 
 // Function to get required environment variable or throw error
 function getRequiredEnv(key: string): string {

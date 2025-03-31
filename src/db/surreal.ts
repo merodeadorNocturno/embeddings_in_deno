@@ -8,7 +8,7 @@ import type {
   ConnectionConfig, // Make sure these are exported if defined here
   SurrealQueryResult,
 } from "../types/db_types.ts"; // Or define them here and export
-import type { FieldOfExpertise, Expert, GeneratedContent } from "../types/index.ts"; // Import data types
+import type { FieldOfExpertise, Expert } from "../types/index.ts"; // Import data types
 
 // Define/Export ConnectionConfig related interfaces if not in a separate file
 export { Credentials, DatabaseScope, EndpointConfig, ConnectionConfig };
